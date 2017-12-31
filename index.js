@@ -12,7 +12,7 @@ const fs = require("fs")
 
 var bot = new Discord.Client();
 
-const modrole = "Modérateur";
+const modrole = "Modo";
 
 var client = new Discord.Client();
 
