@@ -134,6 +134,7 @@ bot.on("message", async function(message) {
             var member = message.mentions.members.first();
             if (message.mentions.users.size < 1) return message.reply("Tu as oublié de préciser à qui je dois ajouter le grade Averto.")
             member.addRole(member.guild.roles.find("name", "Averto'"))
+            setTimeout(() => { member.removeRole(member.guild.roles.find("name", "Averto'")); }, 604800000);
             user.send(message.author.toString() + " t'a ajouté le grade Averto', il fallait faire attention !");
             break;
             case "averto2":
@@ -144,6 +145,7 @@ bot.on("message", async function(message) {
             var member = message.mentions.members.first();
             if (message.mentions.users.size < 1) return message.reply("Tu as oublié de préciser à qui je dois ajouter le grade 2ième averto'.")
             member.addRole(member.guild.roles.find("name", "2ième averto'"))
+            setTimeout(() => { member.removeRole(member.guild.roles.find("name", "2ième averto'")); }, 1209600000);
             user.send(message.author.toString() + " t'a ajouté le grade 2ième averto', commence à faire attention !");
             break;
         case "bolosse":
@@ -154,6 +156,7 @@ bot.on("message", async function(message) {
             var member = message.mentions.members.first();
             if (message.mentions.users.size < 1) return message.reply("Tu as oublié de préciser à qui je dois ajouter le grade Bolosse.")
             member.addRole(member.guild.roles.find("name", "Bolosse"))
+            setTimeout(() => { member.removeRole(member.guild.roles.find("name", "Bolosse")); }, 2419200000);
             user.send(message.author.toString() + " t'a ajouté le grade Bolosse, il fallait faire attention, maintenant il faut assumer !");
             break;
         case "help":
