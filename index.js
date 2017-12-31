@@ -161,14 +161,17 @@ bot.on("message", async function(message) {
 __***Commandes disponibles sur le bot.***__
 
 __**Informations**__
-**photo** : Voir la photo de profil de quelqu'un. Utilsation : _photo @utilisateur
-**userinfo** : Informations sur un utilisateur. Utilisation : _userinfo @utilisateur
+**photo** : Voir la photo de profil de quelqu'un. Utilsation : m!photo @utilisateur
+**userinfo** : Informations sur un utilisateur. Utilisation : m!userinfo @utilisateur
 **serverinfo** : Informations sur le serveur sur le quel tu te trouves.
 
 __**Modération**__
-**mute** : Mute un utilisateur. Utilisation : _mute @utilisatuer <temps en minutes> <raison>
-**unmute** : Unmute un utilisateur. Utilisation : _unmute @utilisateur
-**purge** : Supprimer un certain nombre de messages. Utilisation : _purge <nombre de messages (minimum 2 et maximum 100).>
+**mute** : Mute un utilisateur. Utilisation : m!mute @utilisatuer <temps en minutes> <raison>
+**unmute** : Unmute un utilisateur. Utilisation : m!unmute @utilisateur
+**purge** : Supprimer un certain nombre de messages. Utilisation : m!purge <nombre de messages (minimum 2 et maximum 100).>
+**averto** : Avertir un utilisateur quand il a fait une connerie. Utilisation m!averto @Utilisateur
+**averto2** : Avertir un utilisateur quand il a fait une 2ème connerie connerie. Utilisation m!averto2 @Utilisateur
+**bolosse** : Bolosser un utilisateur quand il a fait une grosse connerie. Utilisation m!bolosse @Utilisateur
             `)
             message.react("✅")
             message.channel.send(member.toString() + " Je t'ai envoyé les commandes en MP !")
