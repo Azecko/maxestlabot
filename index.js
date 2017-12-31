@@ -193,7 +193,10 @@ __**Modération**__
             break;
         case "photo":
             if (message.mentions.users.size < 1) return message.reply("Tu as oublié de préciser de qui je dois montrer la photo de profil.")
-            message.channel.send(user.avatarURL)
+            var embed = new Discord.MessageEmbed()
+            .setImage(user.avatarURL())
+            .setColor(generateHex())
+            message.channel.send(embed)
             break;
         case "purge":
             if (!message.member.roles.find("name", modrole)) {
